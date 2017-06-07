@@ -28,41 +28,70 @@ mas("Giphy", id: 668208984) unless File.exist?("/Applications/GIPHY CAPTURE.app"
 mas("DaisyDisk", id: 411643860) unless File.exist?("/Applications/DaisyDisk.app")
 mas("Deckset", id: 847496013) unless File.exist?("/Applications/Deckset.app")
 
+# Services
+
+brew "redis"
+
 # Cli stuff
+
+# dotfile bash stuff
+brew "bash-git-prompt"
+brew "bash-completion"
+
+# Dev
+
+brew "git"
+brew "yarn"
+brew "shellcheck"
+brew "jq"
+brew "watchman"
+brew "hyper"
+brew "buildkite-agent", args: ["devel"]
+
+# Git GPG helpers
+brew "pinentry-mac"
+brew "pinentry"
+
+# Golang
+
+brew "go"
+
+# Node
+
+brew "node"
+
+# Random dev deps
 
 brew "autoconf"
 brew "coreutils"
 brew "gnu-tar"
-brew "jq"
 brew "mtr"
-brew "pinentry-mac"
 brew "sqlite"
 brew "automake"
-brew "go"
-brew "libxml2"
-brew "libpng" # for the Buildkite frontend
-brew "libtool" # for the Buildkite frontend
-brew "node"
 brew "pkg-config"
-brew "bash-completion"
 brew "libgcrypt"
 brew "libxslt"
-brew "watchman"
-brew "bash-git-prompt"
 brew "openssl"
 brew "readline"
-brew "hyper"
 brew "libksba"
 brew "makedepend"
-brew "redis"
-brew "yarn"
-brew "buildkite-agent", args: ["devel"]
-brew "md5sha1sum"
-brew "phantomjs"
-brew "shellcheck"
-brew "git"
+
+# XCode dev
+
 brew "carthage"
-brew "pinentry"
+
+# Ruby dep stuff
+
 brew "rbenv"
 brew "rbenv-communal-gems"
 brew "ruby-build"
+brew "phantomjs"
+brew "libxml2"
+
+# Node dep stuff
+brew "libpng" # for the Buildkite frontend
+brew "libtool" # for the Buildkite frontend
+
+# AWS tools
+cask "aws-vault"
+brew "awscli"
