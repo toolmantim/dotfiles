@@ -40,6 +40,8 @@ brew "sqlite"
 brew "automake"
 brew "go"
 brew "libxml2"
+brew "libpng" # for the Buildkite frontend
+brew "libtool" # for the Buildkite frontend
 brew "node"
 brew "pkg-config"
 brew "bash-completion"
