@@ -1,0 +1,58 @@
+tap "caskroom/cask"
+tap "buildkite/buildkite"
+
+cask_args appdir: "/Applications"
+
+# Mac apps
+# We skip these if they exist, otherwise they can download every time
+
+cask "gpgtools" unless File.exist?("/Applications/GPG Keychain.app")
+cask "sublime-text" unless File.exist?("/Applications/Sublime Text.app")
+cask "postgres" unless File.exist?("/Applications/Postgres.app")
+cask "adobe-creative-cloud" unless File.exist?("/Applications/Adobe Creative Cloud")
+cask "docker" unless File.exist?("/Applications/Docker.app")
+cask "flux" unless File.exist?("/Applications/Flux.app")
+cask "cloak" unless File.exist?("/Applications/Cloak.app")
+cask "sketch" unless File.exist?("/Applications/Sketch.app")
+cask "slack" unless File.exist?("/Applications/Slack.app")
+cask "basecamp" unless File.exist?("/Applications/Google Chrome.app")
+cask "google-chrome" unless File.exist?("/Applications/Google Chrome.app")
+cask "dropbox" unless File.exist?("/Applications/Dropbox.app")
+mas("1Password", id: 443987910) unless File.exist?("/Applications/1Password.app")
+
+# Cli stuff
+
+brew "autoconf"
+brew "coreutils"
+brew "gnu-tar"
+brew "jq"
+brew "mtr"
+brew "pinentry-mac"
+brew "sqlite"
+brew "automake"
+brew "go"
+brew "libxml2"
+brew "node"
+brew "pkg-config"
+brew "bash-completion"
+brew "libgcrypt"
+brew "libxslt"
+brew "watchman"
+brew "bash-git-prompt"
+brew "openssl"
+brew "readline"
+brew "hyper"
+brew "libksba"
+brew "makedepend"
+brew "redis"
+brew "yarn"
+brew "buildkite-agent", args: ["devel"]
+brew "md5sha1sum"
+brew "phantomjs"
+brew "shellcheck"
+brew "git"
+brew "carthage"
+brew "pinentry"
+brew "rbenv"
+brew "rbenv-communal-gems"
+brew "ruby-build"
