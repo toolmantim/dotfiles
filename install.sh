@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Installs all the things
+#
+# This can safely be run as many times as you like on an existing machine
+
 set -u
 
 # Setup homebrew and friends
