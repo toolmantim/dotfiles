@@ -13,12 +13,20 @@ cask "adobe-creative-cloud" unless File.exist?("/Applications/Adobe Creative Clo
 cask "docker" unless File.exist?("/Applications/Docker.app")
 cask "flux" unless File.exist?("/Applications/Flux.app")
 cask "cloak" unless File.exist?("/Applications/Cloak.app")
+cask "imageoptim" unless File.exist?("/Applications/ImageOptim.app")
+cask "noun-project" unless File.exist?("/Applications/Noun Project.app")
+cask "color-oracle" unless File.exist?("/Applications/Color Oracle.app")
 cask "sketch" unless File.exist?("/Applications/Sketch.app")
 cask "slack" unless File.exist?("/Applications/Slack.app")
 cask "basecamp" unless File.exist?("/Applications/Google Chrome.app")
 cask "google-chrome" unless File.exist?("/Applications/Google Chrome.app")
 cask "dropbox" unless File.exist?("/Applications/Dropbox.app")
 mas("1Password", id: 443987910) unless File.exist?("/Applications/1Password.app")
+mas("Tweetbot", id: 557168941) unless File.exist?("/Applications/Tweetbot.app")
+mas("Typeface", id: 1062679359) unless File.exist?("/Applications/typeface.app")
+mas("Giphy", id: 668208984) unless File.exist?("/Applications/GIPHY CAPTURE.app")
+mas("DaisyDisk", id: 411643860) unless File.exist?("/Applications/DaisyDisk.app")
+mas("Deckset", id: 847496013) unless File.exist?("/Applications/Deckset.app")
 
 # Cli stuff
 
