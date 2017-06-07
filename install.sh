@@ -42,6 +42,3 @@ aws_dir="$HOME/.aws"
 mkdir -p "$aws_dir"
 rm "$aws_dir/config" || true
 ln -s "$icloud/aws/config" "$aws_dir/config"
-
-# Setup rbenv
-rbenv init

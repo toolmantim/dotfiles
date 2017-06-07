@@ -1,6 +1,5 @@
 #!/bin/bash
 
-if [[ -d "$HOME/.rbenv" ]]; then
-  export PATH="$HOME/.rbenv/bin:$PATH"
+if ! which rbenv; then
   eval "$(rbenv init -)"
 fi
