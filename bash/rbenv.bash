@@ -1,5 +1,5 @@
 #!/bin/bash
 
-if which rbenv; then
+if which rbenv > /dev/null 2>&1; then
   eval "$(rbenv init -)"
 fi
