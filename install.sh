@@ -32,12 +32,12 @@ fi
 
 icloud="$HOME/Library/Mobile Documents/com~apple~CloudDocs/System Configs"
 
-sublime_app_support="$HOME/Library/Application Support/Sublime Text 3"
-for dir in Packages Installed\ Packages; do
-  mkdir -p "$sublime_app_support"
-  rm -r "$sublime_app_support/$dir" || true
-  ln -s "$icloud/Sublime/Application Support/$dir" "$sublime_app_support/$dir"
-done
+# sublime_app_support="$HOME/Library/Application Support/Sublime Text 3"
+# for dir in Packages Installed\ Packages; do
+#   mkdir -p "$sublime_app_support"
+#   rm -r "$sublime_app_support/$dir" || true
+#   ln -s "$icloud/Sublime/Application Support/$dir" "$sublime_app_support/$dir"
+# done
 
 aws_dir="$HOME/.aws"
 mkdir -p "$aws_dir"
