@@ -32,13 +32,6 @@ fi
 
 icloud="$HOME/Library/Mobile Documents/com~apple~CloudDocs/System Configs"
 
-# sublime_app_support="$HOME/Library/Application Support/Sublime Text 3"
-# for dir in Packages Installed\ Packages; do
-#   mkdir -p "$sublime_app_support"
-#   rm -r "$sublime_app_support/$dir" || true
-#   ln -s "$icloud/Sublime/Application Support/$dir" "$sublime_app_support/$dir"
-# done
-
 aws_dir="$HOME/.aws"
 mkdir -p "$aws_dir"
 rm "$aws_dir/config" || true
@@ -51,4 +44,5 @@ ln -s "$icloud/ssh/config" "$ssh_dir/config"
 
 rm "$HOME/.gitconfig" || true
 ln -s "$icloud/git/config" "$HOME/.gitconfig"
-ln -s "$icloud/git/identities" "$HOME/.gitidentities"
+rm "$HOME/.gitignore" || true
+ln -s "$icloud/git/ignore" "$HOME/.gitignore"
