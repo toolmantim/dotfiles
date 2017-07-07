@@ -1,4 +1,4 @@
 #!/bin/bash
 
-# Sublime yo.
-export EDITOR='subl -w'
+# VS Code yo.
+export EDITOR='code --wait'
