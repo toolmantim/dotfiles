@@ -16,7 +16,7 @@ brew tap Homebrew/bundle
 
 # Install all the things
 
-cd ~/.dotfiles/homebrew && brew bundle
+# cd ~/.dotfiles/homebrew && brew bundle
 
 # Setup Bash
 
@@ -34,15 +34,16 @@ icloud="$HOME/Library/Mobile Documents/com~apple~CloudDocs/System Configs"
 
 aws_dir="$HOME/.aws"
 mkdir -p "$aws_dir"
-rm "$aws_dir/config" || true
+if [[ -e "$aws_dir/config" || -L "$aws_dir/config" ]]; then rm "$aws_dir/config"; fi
 ln -s "$icloud/aws/config" "$aws_dir/config"
 
 ssh_dir="$HOME/.ssh"
 mkdir -p "$ssh_dir"
-rm "$ssh_dir/config" || true
+if [[ -e "$ssh_dir/config" || -L "$ssh_dir/config" ]]; then rm "$ssh_dir/config"; fi
 ln -s "$icloud/ssh/config" "$ssh_dir/config"
 
-rm "$HOME/.gitconfig" || true
+if [[ -e "$HOME/.gitconfig" || -L "$HOME/.gitconfig" ]]; then rm "$HOME/.gitconfig"; fi
 ln -s "$icloud/git/config" "$HOME/.gitconfig"
-rm "$HOME/.gitignore" || true
+
+if [[ -e "$HOME/.gitignore" || -L "$HOME/.gitignore" ]]; then rm "$HOME/.gitignore"; fi
 ln -s "$icloud/git/ignore" "$HOME/.gitignore"
