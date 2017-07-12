@@ -40,6 +40,7 @@ brew "bash-completion"
 # Dev
 
 brew "git"
+brew "diff-so-fancy"
 brew "yarn"
 brew "shellcheck"
 brew "jq"
