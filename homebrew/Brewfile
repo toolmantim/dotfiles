@@ -62,6 +62,7 @@ brew "node"
 
 # Random dev deps
 
+brew "puma/puma/puma-dev"
 brew "autoconf"
 brew "coreutils"
 brew "gnu-tar"
