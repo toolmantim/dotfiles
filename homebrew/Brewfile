@@ -52,6 +52,7 @@ brew "shellcheck"
 brew "jq"
 brew "watchman"
 brew "buildkite-agent", args: ["devel"]
+brew "goreman"
 
 # Git GPG helpers
 brew "pinentry-mac"
