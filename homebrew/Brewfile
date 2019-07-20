@@ -66,6 +66,10 @@ brew "go"
 
 brew "node"
 
+# SSH
+
+brew "sekey"
+
 # Random dev deps
 
 brew "puma/puma/puma-dev"
