@@ -6,26 +6,32 @@ cask_args appdir: "/Applications"
 # Mac apps
 # We skip these if they exist, otherwise they can download every time
 
-cask "gpgtools" unless File.exist?("/Applications/GPG Keychain.app")
-cask "sublime-text" unless File.exist?("/Applications/Sublime Text.app")
-cask "postgres" unless File.exist?("/Applications/Postgres.app")
-cask "adobe-creative-cloud" unless File.exist?("/Applications/Adobe Creative Cloud")
-cask "docker" unless File.exist?("/Applications/Docker.app")
-cask "flux" unless File.exist?("/Applications/Flux.app")
-cask "cloak" unless File.exist?("/Applications/Cloak.app")
-cask "imageoptim" unless File.exist?("/Applications/ImageOptim.app")
-cask "noun-project" unless File.exist?("/Applications/Noun Project.app")
-cask "color-oracle" unless File.exist?("/Applications/Color Oracle.app")
-cask "sketch" unless File.exist?("/Applications/Sketch.app")
-cask "slack" unless File.exist?("/Applications/Slack.app")
-cask "basecamp" unless File.exist?("/Applications/Google Chrome.app")
-cask "google-chrome" unless File.exist?("/Applications/Google Chrome.app")
-cask "dropbox" unless File.exist?("/Applications/Dropbox.app")
-mas("Tweetbot", id: 557168941) unless File.exist?("/Applications/Tweetbot.app")
-mas("Typeface", id: 1062679359) unless File.exist?("/Applications/typeface.app")
-mas("Giphy", id: 668208984) unless File.exist?("/Applications/GIPHY CAPTURE.app")
-mas("DaisyDisk", id: 411643860) unless File.exist?("/Applications/DaisyDisk.app")
-mas("Deckset", id: 847496013) unless File.exist?("/Applications/Deckset.app")
+cask "gpg-suite"
+cask "visual-studio-code"
+cask "postgres"
+cask "adobe-creative-cloud"
+cask "docker"
+cask "imageoptim"
+cask "noun-project"
+cask "color-oracle"
+cask "sketch"
+cask "slack"
+cask "basecamp"
+cask "google-chrome"
+cask "dropbox"
+cask "zoomus"
+cask "encryptme"
+cask "firefox"
+cask "gifski"
+cask "krisp"
+
+mas("Tweetbot", id: 557168941)
+mas("Typeface", id: 1062679359)
+mas("Giphy", id: 668208984)
+mas("DaisyDisk", id: 411643860)
+mas("Deckset", id: 847496013)
+mas("Giphy", id: 668208984)
+mas("Gifski", id: 1351639930)
 
 # Services
 
@@ -45,7 +51,6 @@ brew "yarn"
 brew "shellcheck"
 brew "jq"
 brew "watchman"
-brew "hyper"
 brew "buildkite-agent", args: ["devel"]
 
 # Git GPG helpers
@@ -86,7 +91,6 @@ brew "carthage"
 brew "rbenv"
 brew "rbenv-communal-gems"
 brew "ruby-build"
-brew "phantomjs"
 brew "libxml2"
 
 # Node dep stuff
