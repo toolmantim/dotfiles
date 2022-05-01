@@ -2,4 +2,4 @@
 
 # VS Code yo.
 export EDITOR='code --wait'
-alias e='code'
+alias e='code -g'
