@@ -1,5 +1,3 @@
-#!/bin/bash
-
 pr () {
   local branch=`git rev-parse --abbrev-ref HEAD`
   local branch_origin=`git config --get "branch.${branch}.remote"`
